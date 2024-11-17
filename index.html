@@ -1,0 +1,131 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EZ-E</title>
+  <link rel="stylesheet" href="myPortfolio-take-2.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head><body><div class="header">
+  <h1 class="intro">It's me, Eazy-E</h1>
+  </div>
+
+<nav class="topnav">
+  <a class="active" href="#home">Eazy-E</a>
+  <a href="#about">About me</a>
+  <a href="#languages">I use...</a>
+  <a href="favthings">Fav things</a>
+</nav>
+
+  <main>
+      <h1></h1>  
+  </main>
+  <div class="myPicture">
+  <h3 class="me">I like to <em>floatandRotate</em></h3>
+  <style>
+      @keyframes floatAndRotate {
+          0% {
+              transform: translateX(0) rotate(0deg);
+          }
+          50% {
+              transform: translateX(calc(100vw - 200px)) rotate(360deg);
+          }
+          100% {
+              transform: translateX(0) rotate(720deg);
+          }
+      }
+      
+      .floating-image {
+          animation: floatAndRotate 10s linear infinite;
+          width: 200px;
+          height: auto;
+          position: relative;
+      }
+
+      body, h1, h3, p, div {
+          margin: 0;
+          padding: 0;
+      }
+
+      .myPicture, .myDescription, .skills {
+          margin: 0;
+          padding: 20px;
+      }
+
+      .topnav {
+          background-color: darkgreen;
+          padding: 15px;
+          display: flex;
+          justify-content: space-around;
+      }
+
+      .topnav a {
+          color: lightblue;
+          text-decoration: none;
+          padding: 10px 20px;
+          
+      
+      }
+
+      .topnav a:hover {
+          background-color: rgba(112, 76, 180, 2);
+          text-decoration: underline;
+          border-radius: 10px;
+      }
+
+      .topnav a:active {
+          color: violet;
+      }
+
+      @keyframes floatText {
+          0% {
+              transform: translateX(0);
+          }
+          50% {
+              transform: translateX(calc(100vw - 200px));
+          }
+          100% {
+              transform: translateX(0);
+          }
+      }
+      
+      .intro {
+          color: lightblue;
+          padding: 10px 20px;
+          animation: floatText 10s linear infinite;
+          position: relative;
+          white-space: nowrap;  /* Keeps text on one line */
+          width: fit-content;   /* Makes the background only as wide as the text */
+      }
+      .header {
+          background-color: darkgreen;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          display: block;
+      }
+      
+  </style>
+  <img class="floating-image" src="/Users/eli/Desktop/The Folder/Codecademy/Projects/PortfolioProj-take-2/4C3D02D3-646A-412F-BC87-90FF23C97D76.JPG" alt="A picture of the author wearing a black and white striped sweater.">
+</div>
+<div class="myDescription">
+<p><strong> My name is Elijah, I am a student of code. I call New York City home but am currently based in the Netherlands. I study biochemistry and practice code during my free-time.
+I dream of using code to bring my love of art, science, comedy, and design to life on the web. 
+</strong></p>
+<br><br><br>
+  <h3 class="skills-prompt">What I work with:</h3>
+  <div class="logos">
+      <img src="/Users/eli/Desktop/The Folder/Codecademy/Projects/PortfolioProj-take-2/JavaScript-logo.png" alt="JavaScript logo">
+      <img src="/Users/eli/Desktop/The Folder/Codecademy/Projects/PortfolioProj-take-2/download.png" alt="HTML Logo">
+      <img src="/Users/eli/Desktop/The Folder/Codecademy/Projects/PortfolioProj-take-2/CSS3_logo.svg.png" alt="CSS Logo">
+      <img src="/Users/eli/Desktop/The Folder/Codecademy/Projects/PortfolioProj-take-2/download (1).png" alt="React logo">
+      <img src="/Users/eli/Desktop/The Folder/Codecademy/Projects/PortfolioProj-take-2/download (2).png" alt="Redux Logo">
+  </div>
+</div>
+
+
+  <script src="myPortfolio.js"></script>
+
+
+
+
+</body></html>
