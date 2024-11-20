@@ -1,4 +1,129 @@
-/* Logos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Add viewport meta tag to your HTML file's head section */
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: darkgreen;
+    padding: 20px 0;
+    flex-wrap: wrap; /* Allow logos to wrap on small screens */
+    gap: 20px; /* Add space between wrapped items */
+}
+
+.logos img {
+    height: auto;
+    max-width: 100px;
+    flex: 0 1 auto;
+    border: solid transparent 1px;
+    border-radius: 5%;
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+    .logos img {
+        max-width: 70px; /* Smaller logos on mobile */
+    }
+
+    .myPicture img {
+        width: 30% !important; /* Adjusted to maintain rotation layout */
+        margin: 10px auto !important;
+    }
+
+    /* Maintain rotations but adjust sizes for mobile */
+    #first-tilt {
+        width: 25% !important;
+    }
+
+    #second-tilt {
+        width: 23% !important;
+    }
+
+    #third-tilt {
+        width: 21% !important;
+    }
+
+    #upside-down {
+        width: 19% !important;
+    }
+
+    #fourth-tilt {
+        width: 17% !important;
+    }
+
+    #fifth-tilt {
+        width: 15% !important;
+    }
+
+    #final-tilt {
+        width: 13% !important;
+    }
+
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav a {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid darkgreen;
+    }
+
+    .me, .myDescription {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+
+/* Styles for even smaller screens */
+@media screen and (max-width: 480px) {
+    .logos img {
+        max-width: 50px;
+    }
+
+    .myPicture img {
+        width: 25% !important; /* Even smaller for very small screens */
+    }
+
+    /* Adjust rotated images for very small screens */
+    #first-tilt {
+        width: 20% !important;
+    }
+
+    #second-tilt {
+        width: 18% !important;
+    }
+
+    #third-tilt {
+        width: 16% !important;
+    }
+
+    #upside-down {
+        width: 14% !important;
+    }
+
+    #fourth-tilt {
+        width: 12% !important;
+    }
+
+    #fifth-tilt {
+        width: 10% !important;
+    }
+
+    #final-tilt {
+        width: 8% !important;
+    }
+}
+
 .intro {
     background-color: darkgreen;
     color: lightblue;
@@ -15,23 +140,6 @@
 .topnav a {
     text-align: center;
 
-}
-
-.logos {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    background-color: darkgreen;
-    padding: 20px 0;
-}
-
-.logos img {
-    height: auto;
-    max-width: 100px;
-    flex: 0 1 auto;
-    border: solid transparent 1px;
-    border-radius: 5%;
 }
 
 .myPicture {
