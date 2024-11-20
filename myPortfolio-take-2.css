@@ -29,41 +29,58 @@
 /* Media queries for different screen sizes */
 @media screen and (max-width: 768px) {
     .logos img {
-        max-width: 70px; /* Smaller logos on mobile */
+        max-width: 70px;
+    }
+
+    .myPicture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
     }
 
     .myPicture img {
-        width: 30% !important; /* Adjusted to maintain rotation layout */
-        margin: 10px auto !important;
+        width: 200px !important; /* Fixed width for all images */
+        margin: 0 auto !important;
+        height: auto !important;
     }
 
-    /* Maintain rotations but adjust sizes for mobile */
+    /* Keep rotations but remove width variations */
     #first-tilt {
-        width: 25% !important;
+        transform: rotate(45deg);
+        width: 200px !important;
     }
 
     #second-tilt {
-        width: 23% !important;
+        transform: rotate(90deg);
+        width: 200px !important;
     }
 
     #third-tilt {
-        width: 21% !important;
+        transform: rotate(125deg);
+        width: 200px !important;
     }
 
     #upside-down {
-        width: 19% !important;
+        transform: rotate(180deg);
+        width: 200px !important;
     }
 
     #fourth-tilt {
-        width: 17% !important;
+        transform: rotate(225deg);
+        width: 200px !important;
     }
 
     #fifth-tilt {
-        width: 15% !important;
+        transform: rotate(270deg);
+        width: 200px !important;
     }
 
     #final-tilt {
-        width: 13% !important;
+        transform: rotate(315deg);
+        width: 200px !important;
     }
 
     .topnav {
@@ -91,7 +108,7 @@
     }
 
     .myPicture img {
-        width: 25% !important; /* Even smaller for very small screens */
+        width: 150px !important; /* Smaller fixed width for very small screens */
     }
 
     /* Adjust rotated images for very small screens */
