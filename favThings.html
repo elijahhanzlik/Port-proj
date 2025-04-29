@@ -1,0 +1,140 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EZ-E</title>
+  <link rel="stylesheet" href="favThings.css">
+  <link rel="icon" href="./Purple-star.webp" type="image/x-icon">
+  <style>
+    body {
+      background-color: #0a192f; /* Match dark greenish background */
+      color: #c2e5ff; /* Match light blue text */
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+      cursor: url('./Purple-star-small.png'), auto;
+    }
+
+    .header {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .intro {
+      font-size: 3rem;
+      color: #c2e5ff;
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #0a192f;
+      padding: 1rem 0;
+      margin: 0;
+    }
+
+    .topnav a {
+      color: #c2e5ff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .topnav a:hover {
+      color: violet;
+      cursor: url('./Purple-star-small.png'), auto;
+    }
+
+    .websites h3,
+    .websites p {
+      color: #c2e5ff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .websites a {
+      color: violet;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+
+    .websites a:hover {
+      color: violet;
+      cursor: url('./Purple-star-small.png'), auto;
+    }
+
+    .music {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+    @keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.websites a:hover {
+  animation: pulse 0.6s infinite;
+}
+
+.sketch-canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+  </style>
+  </head><body><div class="header">
+  <h1 class="intro">Favorite things</h1>
+  </div>
+
+<nav class="topnav">
+  <a class="active" href="myPortfolio.html">Eazy-E</a>
+  <a href="#about">Blog</a>
+  <a href="#languages">weirdRandom</a>
+  <a href="#favthings">Fav things</a>
+</nav>
+    <div class="websites">
+    <div class="Trey">
+<h3>These are some of my miscelaneous joys starting with websites and projects of some friends</h3>  
+<p>This is my very cool friend Trey McIntyre, whose website has kept me inspired.</p>
+<a target="_blank" href="https://treycool.com/">treycool</a>
+<br>
+    </div>
+    <div class="Sam">
+        <h3>My other very tall friend's whose genius seems infinite.</h3>
+        <a target="_blank" href="https://samlawton.space/">LwtnLabs</a>
+    </div>
+    <div class="Oxman">
+        <h3>Inspiration</h3>
+        <a target="_blank" href="https://oxman.com/">Oxman Labs</a>
+    </div>
+    <br><br><br>
+  <div class="sketch-canvas">
+    <script src="sketch-03-bundle.js"></script>
+  </div>
+</div>
+<div class="music">
+    <iframe
+    style="border-radius: 12px"
+    src=""
+    width="100%"
+    height="380"
+    frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    allowfullscreen>
+    </iframe>
+</div>
+</body></html>
