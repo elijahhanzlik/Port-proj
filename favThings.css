@@ -1,0 +1,5 @@
+
+html, body {
+    background-color: darkgreen;
+    min-height: 100vh; /* This ensures the background covers the full viewport height */
+}
